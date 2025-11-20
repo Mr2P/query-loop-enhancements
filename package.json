@@ -1,0 +1,34 @@
+{
+  "name": "query-loop-enhancements",
+  "version": "1.0.0",
+  "description": "Make everyone love the Query Loop block.",
+  "author": "Phi Phan (mrphipv@gmail.com)",
+  "license": "GPL-3.0",
+  "main": "build/index.js",
+  "scripts": {
+    "bump:patch": "node scripts/bump-version.js --type=patch",
+    "bump:minor": "node scripts/bump-version.js --type=minor",
+    "bump:major": "node scripts/bump-version.js --type=major",
+    "bump:prerelease": "node scripts/bump-version.js --type=prerelease",
+    "bump:prepatch": "node scripts/bump-version.js --type=prepatch",
+    "bump:preminor": "node scripts/bump-version.js --type=preminor",
+    "bump:premajor": "node scripts/bump-version.js --type=premajor",
+    "git-tag": "node scripts/git-tag.js",
+    "copy-icons": "node scripts/copy-icons.js --type=icons",
+    "build": "wp-scripts build",
+    "format": "wp-scripts format",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "start": "wp-scripts start",
+    "packages-update": "wp-scripts packages-update",
+    "make-pot": "wp i18n make-pot . languages/query-loop-enhancements.pot --exclude='wpcs,*.asset.php'"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^31.0.0",
+    "ignore-emit-webpack-plugin": "^2.0.6"
+  },
+  "textdomain": "query-loop-enhancements"
+}
